@@ -1,5 +1,43 @@
--- Table Approver has a compound primary key so no sequence or trigger was created for it.
--- Table Contacts has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE D3_Approver_seq ; 
+create sequence D3_Approver_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Approver_PK_trig 
+before insert on D3_Approver
+for each row 
+begin 
+select D3_Approver_seq.nextval into :new.ApproverID from dual; 
+end; 
+/
+alter table D3_Approver add created date ; 
+alter table D3_Approver add created_by VARCHAR2 (255) ; 
+alter table D3_Approver add row_version_number integer ; 
+alter table D3_Approver add updated date ; 
+alter table D3_Approver add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Approver_AUD_trig 
+before insert or update on D3_Approver 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
 DROP SEQUENCE D3_Auth_seq ; 
 create sequence D3_Auth_seq 
 start with 100 
@@ -62,6 +100,46 @@ alter table D3_Comment add updated_by VARCHAR2 (255) ;
 /
 create or replace trigger D3_Comment_AUD_trig 
 before insert or update on D3_Comment 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Contacts_seq ; 
+create sequence D3_Contacts_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Contacts_PK_trig 
+before insert on D3_Contacts
+for each row 
+begin 
+select D3_Contacts_seq.nextval into :new.ContactID from dual; 
+end; 
+/
+alter table D3_Contacts add created date ; 
+alter table D3_Contacts add created_by VARCHAR2 (255) ; 
+alter table D3_Contacts add row_version_number integer ; 
+alter table D3_Contacts add updated date ; 
+alter table D3_Contacts add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Contacts_AUD_trig 
+before insert or update on D3_Contacts 
 for each row 
 begin 
   if inserting then 
@@ -441,32 +519,34 @@ end;
 /
 
 DROP INDEX D3_Emp_EmpID_FK_0 ;
-CREATE INDEX D3_Emp_EmpID_FK_0 ON D3_Auth(D3_Emp_EmpID) ;
+CREATE INDEX D3_Emp_EmpID_FK_0 ON D3_Approver(D3_Emp_EmpID) ;
 DROP INDEX D3_RFE_RFEID_FK_1 ;
-CREATE INDEX D3_RFE_RFEID_FK_1 ON D3_Comment(D3_RFE_RFEID) ;
-DROP INDEX D3_RFE_RFEID_FK_2 ;
-CREATE INDEX D3_RFE_RFEID_FK_2 ON D3_Doc(D3_RFE_RFEID) ;
-DROP INDEX D3_Auth_AuthID_FK_3 ;
-CREATE INDEX D3_Auth_AuthID_FK_3 ON D3_Emp(D3_Auth_AuthID) ;
-DROP INDEX D3_Lab_LabID_FK_4 ;
-CREATE INDEX D3_Lab_LabID_FK_4 ON D3_Emp(D3_Lab_LabID) ;
+CREATE INDEX D3_RFE_RFEID_FK_1 ON D3_Approver(D3_RFE_RFEID) ;
+DROP INDEX D3_Emp_EmpID_FK_2 ;
+CREATE INDEX D3_Emp_EmpID_FK_2 ON D3_Auth(D3_Emp_EmpID) ;
+DROP INDEX D3_RFE_RFEID_FK_3 ;
+CREATE INDEX D3_RFE_RFEID_FK_3 ON D3_Comment(D3_RFE_RFEID) ;
+DROP INDEX D3_Emp_EmpID_FK_4 ;
+CREATE INDEX D3_Emp_EmpID_FK_4 ON D3_Contacts(D3_Emp_EmpID) ;
 DROP INDEX D3_RFE_RFEID_FK_5 ;
-CREATE INDEX D3_RFE_RFEID_FK_5 ON D3_RFE_Contact(D3_RFE_RFEID) ;
-DROP INDEX D3_Emp_EmpID_FK_6 ;
-CREATE INDEX D3_Emp_EmpID_FK_6 ON D3_RFE(D3_Emp_EmpID) ;
-DROP INDEX D3_Status_StatusID_FK_7 ;
-CREATE INDEX D3_Status_StatusID_FK_7 ON D3_RFE(D3_Status_StatusID) ;
-DROP INDEX D3_Task_TaskID_FK_8 ;
-CREATE INDEX D3_Task_TaskID_FK_8 ON D3_RFE(D3_Task_TaskID) ;
+CREATE INDEX D3_RFE_RFEID_FK_5 ON D3_Contacts(D3_RFE_RFEID) ;
+DROP INDEX D3_RFE_RFEID_FK_6 ;
+CREATE INDEX D3_RFE_RFEID_FK_6 ON D3_Doc(D3_RFE_RFEID) ;
+DROP INDEX D3_Auth_AuthID_FK_7 ;
+CREATE INDEX D3_Auth_AuthID_FK_7 ON D3_Emp(D3_Auth_AuthID) ;
+DROP INDEX D3_Lab_LabID_FK_8 ;
+CREATE INDEX D3_Lab_LabID_FK_8 ON D3_Emp(D3_Lab_LabID) ;
 DROP INDEX D3_RFE_RFEID_FK_9 ;
-CREATE INDEX D3_RFE_RFEID_FK_9 ON D3_Roles(D3_RFE_RFEID) ;
-DROP INDEX D3_RFE_RFEID_FK_10 ;
-CREATE INDEX D3_RFE_RFEID_FK_10 ON D3_SHist(D3_RFE_RFEID) ;
-DROP INDEX D3_RFE_RFEID_FK_11 ;
-CREATE INDEX D3_RFE_RFEID_FK_11 ON Approver(D3_RFE_RFEID) ;
-DROP INDEX D3_Emp_EmpID_FK_12 ;
-CREATE INDEX D3_Emp_EmpID_FK_12 ON Approver(D3_Emp_EmpID) ;
+CREATE INDEX D3_RFE_RFEID_FK_9 ON D3_RFE_Contact(D3_RFE_RFEID) ;
+DROP INDEX D3_Emp_EmpID_FK_10 ;
+CREATE INDEX D3_Emp_EmpID_FK_10 ON D3_RFE(D3_Emp_EmpID) ;
+DROP INDEX D3_Status_StatusID_FK_11 ;
+CREATE INDEX D3_Status_StatusID_FK_11 ON D3_RFE(D3_Status_StatusID) ;
+DROP INDEX D3_Task_TaskID_FK_12 ;
+CREATE INDEX D3_Task_TaskID_FK_12 ON D3_RFE(D3_Task_TaskID) ;
 DROP INDEX D3_RFE_RFEID_FK_13 ;
-CREATE INDEX D3_RFE_RFEID_FK_13 ON Contacts(D3_RFE_RFEID) ;
-DROP INDEX D3_Emp_EmpID_FK_14 ;
-CREATE INDEX D3_Emp_EmpID_FK_14 ON Contacts(D3_Emp_EmpID) ;
+CREATE INDEX D3_RFE_RFEID_FK_13 ON D3_Roles(D3_RFE_RFEID) ;
+DROP INDEX D3_RFE_RFEID_FK_14 ;
+CREATE INDEX D3_RFE_RFEID_FK_14 ON D3_SHist(D3_RFE_RFEID) ;
+DROP INDEX D3_Task_TaskID_FK_15 ;
+CREATE INDEX D3_Task_TaskID_FK_15 ON D3_SHist(D3_Task_TaskID) ;
