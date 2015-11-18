@@ -1,0 +1,472 @@
+-- Table Approver has a compound primary key so no sequence or trigger was created for it.
+-- Table Contacts has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE D3_Auth_seq ; 
+create sequence D3_Auth_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Auth_PK_trig 
+before insert on D3_Auth
+for each row 
+begin 
+select D3_Auth_seq.nextval into :new.AuthID from dual; 
+end; 
+/
+alter table D3_Auth add created date ; 
+alter table D3_Auth add created_by VARCHAR2 (255) ; 
+alter table D3_Auth add row_version_number integer ; 
+alter table D3_Auth add updated date ; 
+alter table D3_Auth add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Auth_AUD_trig 
+before insert or update on D3_Auth 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Comment_seq ; 
+create sequence D3_Comment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Comment_PK_trig 
+before insert on D3_Comment
+for each row 
+begin 
+select D3_Comment_seq.nextval into :new.CommentID from dual; 
+end; 
+/
+alter table D3_Comment add created date ; 
+alter table D3_Comment add created_by VARCHAR2 (255) ; 
+alter table D3_Comment add row_version_number integer ; 
+alter table D3_Comment add updated date ; 
+alter table D3_Comment add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Comment_AUD_trig 
+before insert or update on D3_Comment 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Doc_seq ; 
+create sequence D3_Doc_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Doc_PK_trig 
+before insert on D3_Doc
+for each row 
+begin 
+select D3_Doc_seq.nextval into :new.DocID from dual; 
+end; 
+/
+alter table D3_Doc add created date ; 
+alter table D3_Doc add created_by VARCHAR2 (255) ; 
+alter table D3_Doc add row_version_number integer ; 
+alter table D3_Doc add updated date ; 
+alter table D3_Doc add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Doc_AUD_trig 
+before insert or update on D3_Doc 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Emp_seq ; 
+create sequence D3_Emp_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Emp_PK_trig 
+before insert on D3_Emp
+for each row 
+begin 
+select D3_Emp_seq.nextval into :new.EmpID from dual; 
+end; 
+/
+alter table D3_Emp add created date ; 
+alter table D3_Emp add created_by VARCHAR2 (255) ; 
+alter table D3_Emp add row_version_number integer ; 
+alter table D3_Emp add updated date ; 
+alter table D3_Emp add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Emp_AUD_trig 
+before insert or update on D3_Emp 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Lab_seq ; 
+create sequence D3_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Lab_PK_trig 
+before insert on D3_Lab
+for each row 
+begin 
+select D3_Lab_seq.nextval into :new.LabID from dual; 
+end; 
+/
+alter table D3_Lab add created date ; 
+alter table D3_Lab add created_by VARCHAR2 (255) ; 
+alter table D3_Lab add row_version_number integer ; 
+alter table D3_Lab add updated date ; 
+alter table D3_Lab add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Lab_AUD_trig 
+before insert or update on D3_Lab 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_RFE_seq ; 
+create sequence D3_RFE_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_RFE_PK_trig 
+before insert on D3_RFE
+for each row 
+begin 
+select D3_RFE_seq.nextval into :new.RFEID from dual; 
+end; 
+/
+alter table D3_RFE add created date ; 
+alter table D3_RFE add created_by VARCHAR2 (255) ; 
+alter table D3_RFE add row_version_number integer ; 
+alter table D3_RFE add updated date ; 
+alter table D3_RFE add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_RFE_AUD_trig 
+before insert or update on D3_RFE 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_RFE_Contact_seq ; 
+create sequence D3_RFE_Contact_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_RFE_Contact_PK_trig 
+before insert on D3_RFE_Contact
+for each row 
+begin 
+select D3_RFE_Contact_seq.nextval into :new.ContEmpID from dual; 
+end; 
+/
+alter table D3_RFE_Contact add created date ; 
+alter table D3_RFE_Contact add created_by VARCHAR2 (255) ; 
+alter table D3_RFE_Contact add row_version_number integer ; 
+alter table D3_RFE_Contact add updated date ; 
+alter table D3_RFE_Contact add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_RFE_Contact_AUD_trig 
+before insert or update on D3_RFE_Contact 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Roles_seq ; 
+create sequence D3_Roles_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Roles_PK_trig 
+before insert on D3_Roles
+for each row 
+begin 
+select D3_Roles_seq.nextval into :new.RoleID from dual; 
+end; 
+/
+alter table D3_Roles add created date ; 
+alter table D3_Roles add created_by VARCHAR2 (255) ; 
+alter table D3_Roles add row_version_number integer ; 
+alter table D3_Roles add updated date ; 
+alter table D3_Roles add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Roles_AUD_trig 
+before insert or update on D3_Roles 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_SHist_seq ; 
+create sequence D3_SHist_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_SHist_PK_trig 
+before insert on D3_SHist
+for each row 
+begin 
+select D3_SHist_seq.nextval into :new.SHistID from dual; 
+end; 
+/
+alter table D3_SHist add created date ; 
+alter table D3_SHist add created_by VARCHAR2 (255) ; 
+alter table D3_SHist add row_version_number integer ; 
+alter table D3_SHist add updated date ; 
+alter table D3_SHist add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_SHist_AUD_trig 
+before insert or update on D3_SHist 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Status_seq ; 
+create sequence D3_Status_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Status_PK_trig 
+before insert on D3_Status
+for each row 
+begin 
+select D3_Status_seq.nextval into :new.StatusID from dual; 
+end; 
+/
+alter table D3_Status add created date ; 
+alter table D3_Status add created_by VARCHAR2 (255) ; 
+alter table D3_Status add row_version_number integer ; 
+alter table D3_Status add updated date ; 
+alter table D3_Status add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Status_AUD_trig 
+before insert or update on D3_Status 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE D3_Task_seq ; 
+create sequence D3_Task_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger D3_Task_PK_trig 
+before insert on D3_Task
+for each row 
+begin 
+select D3_Task_seq.nextval into :new.TaskID from dual; 
+end; 
+/
+alter table D3_Task add created date ; 
+alter table D3_Task add created_by VARCHAR2 (255) ; 
+alter table D3_Task add row_version_number integer ; 
+alter table D3_Task add updated date ; 
+alter table D3_Task add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger D3_Task_AUD_trig 
+before insert or update on D3_Task 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX D3_Emp_EmpID_FK_0 ;
+CREATE INDEX D3_Emp_EmpID_FK_0 ON D3_Auth(D3_Emp_EmpID) ;
+DROP INDEX D3_RFE_RFEID_FK_1 ;
+CREATE INDEX D3_RFE_RFEID_FK_1 ON D3_Comment(D3_RFE_RFEID) ;
+DROP INDEX D3_RFE_RFEID_FK_2 ;
+CREATE INDEX D3_RFE_RFEID_FK_2 ON D3_Doc(D3_RFE_RFEID) ;
+DROP INDEX D3_Auth_AuthID_FK_3 ;
+CREATE INDEX D3_Auth_AuthID_FK_3 ON D3_Emp(D3_Auth_AuthID) ;
+DROP INDEX D3_Lab_LabID_FK_4 ;
+CREATE INDEX D3_Lab_LabID_FK_4 ON D3_Emp(D3_Lab_LabID) ;
+DROP INDEX D3_RFE_RFEID_FK_5 ;
+CREATE INDEX D3_RFE_RFEID_FK_5 ON D3_RFE_Contact(D3_RFE_RFEID) ;
+DROP INDEX D3_Emp_EmpID_FK_6 ;
+CREATE INDEX D3_Emp_EmpID_FK_6 ON D3_RFE(D3_Emp_EmpID) ;
+DROP INDEX D3_Status_StatusID_FK_7 ;
+CREATE INDEX D3_Status_StatusID_FK_7 ON D3_RFE(D3_Status_StatusID) ;
+DROP INDEX D3_Task_TaskID_FK_8 ;
+CREATE INDEX D3_Task_TaskID_FK_8 ON D3_RFE(D3_Task_TaskID) ;
+DROP INDEX D3_RFE_RFEID_FK_9 ;
+CREATE INDEX D3_RFE_RFEID_FK_9 ON D3_Roles(D3_RFE_RFEID) ;
+DROP INDEX D3_RFE_RFEID_FK_10 ;
+CREATE INDEX D3_RFE_RFEID_FK_10 ON D3_SHist(D3_RFE_RFEID) ;
+DROP INDEX D3_RFE_RFEID_FK_11 ;
+CREATE INDEX D3_RFE_RFEID_FK_11 ON Approver(D3_RFE_RFEID) ;
+DROP INDEX D3_Emp_EmpID_FK_12 ;
+CREATE INDEX D3_Emp_EmpID_FK_12 ON Approver(D3_Emp_EmpID) ;
+DROP INDEX D3_RFE_RFEID_FK_13 ;
+CREATE INDEX D3_RFE_RFEID_FK_13 ON Contacts(D3_RFE_RFEID) ;
+DROP INDEX D3_Emp_EmpID_FK_14 ;
+CREATE INDEX D3_Emp_EmpID_FK_14 ON Contacts(D3_Emp_EmpID) ;
