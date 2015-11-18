@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E36434C1-0D13-0A43-DDD2-5004C90875AB" name="D3_Doc">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>4B63D23B-3CA9-8BB5-48CE-5CD7F3DB9FEC</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DocID" id="DE924847-EF54-849A-662A-FC6E6E7168C6">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>4569654E-1FC2-71B7-A382-2F3190F1B760</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="0156E6BD-F347-96D1-99DA-B6292EC4A1B9">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>B5E12518-B9D5-694D-49DF-AD4193A67DAF</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7C73E8F-3579-4684-B5FB-CC1D8778D163" referredColumn="268C818B-1DC4-2E06-3D7A-E4EC09137E31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C80179CC-ABD3-B7A0-A545-8A6D2EB13ACE" name="D3_Doc_PK">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>9EE84D3E-870F-E872-D927-B3DFA13F13A0</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE924847-EF54-849A-662A-FC6E6E7168C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AFAB1C2-9CC8-638E-F266-207A43E87ED8" name="D3_Doc_D3_RFE_FK">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>E39670C2-CFE4-2AFF-6CBD-8996B1D50DA2</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0156E6BD-F347-96D1-99DA-B6292EC4A1B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

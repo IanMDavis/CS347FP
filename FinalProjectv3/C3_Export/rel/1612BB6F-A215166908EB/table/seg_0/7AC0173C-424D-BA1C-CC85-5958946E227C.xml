@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AC0173C-424D-BA1C-CC85-5958946E227C" name="Approver">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="D3_RFE_RFEID" id="49345915-0AF4-67CC-E047-AC7BAA1E15A5">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86908497-8A66-CA2D-2294-3590478E6B3E" referredColumn="268C818B-1DC4-2E06-3D7A-E4EC09137E31"/>
+</associations>
+</Column>
+<Column name="D3_Emp_EmpID" id="F9064EB8-CAAC-528A-18C0-D1B21FF1D250">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A85797B6-F79D-F211-7AD9-E0E09610563C" referredColumn="67ACE31F-95BE-9EE1-1904-75994C46B08C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF51A6D6-580B-B2E6-9D54-8F7E932A22F9" name="Approver_PK">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49345915-0AF4-67CC-E047-AC7BAA1E15A5"/>
+<colUsage columnID="F9064EB8-CAAC-528A-18C0-D1B21FF1D250"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2678F89-025C-05AD-36E3-A98405236AC1" name="FK_ASS_1">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>69159C7F-1A92-A77D-E61B-D31E800195E8</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49345915-0AF4-67CC-E047-AC7BAA1E15A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FF32BC3-B8DE-D9D8-973A-D15C74E6890F" name="FK_ASS_2">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>69159C7F-1A92-A77D-E61B-D31E800195E8</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9064EB8-CAAC-528A-18C0-D1B21FF1D250"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

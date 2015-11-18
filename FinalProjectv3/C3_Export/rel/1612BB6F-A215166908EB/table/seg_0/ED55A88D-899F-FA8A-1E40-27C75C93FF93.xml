@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED55A88D-899F-FA8A-1E40-27C75C93FF93" name="D3_Roles">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>2DEDD64A-DC86-8BD1-A757-3999DB18FD65</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RoleID" id="F8887CB6-1AC4-CB3C-BCF5-119C12FAB953">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>80D52414-D6C4-31F6-8AB2-AECF30DC1C39</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RoleType" id="D31F0F59-AAE3-4213-0950-67FC8C3CAB91">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>15A164AD-CD29-E911-2370-2696E9073BAF</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descrption" id="C8534820-34D4-4B39-7FBB-B721D668C9F3">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>BB47AABA-A1A9-2507-488E-37F8C0A3C8C6</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="CF245C90-916F-2740-0F68-DD5F45DE5E0C">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>573C0B9B-98FA-2776-CB43-3BB4AE8305FC</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50149D90-9285-416B-8759-13CF2A146067" referredColumn="268C818B-1DC4-2E06-3D7A-E4EC09137E31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E0C9DE0-328B-634C-8AAA-5DB66AC310B9" name="D3_Roles_PK">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>32EEBE1E-10C6-68E7-D63A-DDD26BFB2101</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8887CB6-1AC4-CB3C-BCF5-119C12FAB953"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A20E4E7C-9CC2-DA2C-900C-BF5B6A67E55B" name="D3_Roles_D3_RFE_FK">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>55C192B0-9D0F-4563-E9ED-76CF6C767A18</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF245C90-916F-2740-0F68-DD5F45DE5E0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

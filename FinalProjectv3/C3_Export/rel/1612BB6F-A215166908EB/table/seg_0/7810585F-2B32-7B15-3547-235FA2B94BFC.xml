@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7810585F-2B32-7B15-3547-235FA2B94BFC" name="D3_Lab">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>383341CB-0634-35E4-45E0-B40B46E81108</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LabID" id="899609E1-7ABE-F83F-1695-78C5C150C5AA">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>53525CA1-8AAC-19D2-92E9-A5CAF4965C4C</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEF07389-EE43-C1A3-63DC-7AD65C4F64C1" name="D3_Lab_PK">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-18 00:15:27 UTC</createdTime>
+<generatorID>8C69CD94-A95F-CA92-F518-BA5194702122</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="899609E1-7ABE-F83F-1695-78C5C150C5AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

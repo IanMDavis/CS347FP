@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E816C6BF-D708-9E93-01C3-727C7AF82B0D" name="D3_Emp">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:04:53 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EmpID" id="207FC835-28F6-2972-1FC7-46566F8566D3">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:05:28 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AuthID" id="5D48E72B-E2BB-E2AC-4091-CB85BC807D08">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:16:29 UTC</createdTime>
+<generatorID>DE641792-79BC-1524-1407-F43B6E6783EB</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>49421C14-8295-B51C-A3F3-3DBE487F79B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LabID" id="C42E48E3-5F30-AC9B-BC71-3671CD752B70">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:21:10 UTC</createdTime>
+<generatorID>616EB305-8D22-7BC4-3DA5-462E924113CA</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>53525CA1-8AAC-19D2-92E9-A5CAF4965C4C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpName" id="629FB808-CE8F-B176-3D38-56863B825F76">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:17:34 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpEmail" id="5BBAA7EA-E09D-83CA-F667-9BE12376A2EF">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:17:59 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpOffice" id="4CAD8A59-0DE8-4C22-6F88-6455DC69A79B">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:18:50 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpPhone" id="DE085CB8-4881-4439-7C85-94ED1D7776AB">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:19:48 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpStatus" id="CD39DBFA-A574-E88C-CD19-941C1563358F">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:20:29 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StatEffDate" id="4E635730-F6F8-C552-DBAF-FC6ED42EE29F">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:20:52 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Job1" id="F4F4C67D-21B3-0A74-0D91-6A1B7D73CB7E">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:22:49 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Job2" id="01CF27F2-E4BD-25D4-D747-20F0D3495686">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:23:13 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1101C10D-18AA-B709-10F7-CCC3DFE7EF9A" name="D3_Emp PK">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:05:45 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="A058EF54-9543-5A26-0748-1390B54143F1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>207FC835-28F6-2972-1FC7-46566F8566D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

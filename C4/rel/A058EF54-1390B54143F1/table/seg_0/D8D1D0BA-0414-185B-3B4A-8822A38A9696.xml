@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8D1D0BA-0414-185B-3B4A-8822A38A9696" name="D3_RFE_Contact">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>A00F01B4-7475-E54F-AE0F-AEF52DA98AAF</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ContRole" id="B20C0D19-F381-CE6F-3313-D47356F3CF46">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>85919148-857A-5529-C420-5441F94C8341</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContEmpID" id="2FE734F6-635F-FEDF-DC73-20B5F8B3BF68">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>5E4A0394-99D8-643F-F946-A9A17BA392F0</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EffDate" id="5DD0C876-695A-C1DB-8BDC-4A7939239D66">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>C0DFE828-A11B-7086-62D6-43ECAA964014</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comments" id="FF5F3FFE-74A0-D6C9-3282-ACCD7EC05888">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>ECF8417B-6376-CDDF-0028-3FBCA4FE01AB</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="04B3732E-F02A-DF42-6A72-3BEA752B213D">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>576D5A3A-F75C-C903-90F7-45B2574FEE43</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E3D4F3C-EAB8-2388-4F1F-98F39589E280" referredColumn="BB8F1256-6B75-68DC-69A6-08FB65F2C2E3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA08A915-1E3A-9E5C-3F9D-CB5A4D839095" name="D3_RFE_Contact_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>E4C08E25-ED37-BAA3-EFFD-73A3B9A03A13</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FE734F6-635F-FEDF-DC73-20B5F8B3BF68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C5D573B-316A-2437-E063-C5F555832AFF" name="D3_RFE_Contact_D3_RFE_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:02:12 UTC</createdTime>
+<generatorID>7BDB4CA6-15E4-4970-A939-1B2A33FA4743</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04B3732E-F02A-DF42-6A72-3BEA752B213D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="383341CB-0634-35E4-45E0-B40B46E81108" name="D3_Lab">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:19:37 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="LabID" id="53525CA1-8AAC-19D2-92E9-A5CAF4965C4C">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:19:48 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C69CD94-A95F-CA92-F518-BA5194702122" name="D3_Lab PK">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:20:08 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>53525CA1-8AAC-19D2-92E9-A5CAF4965C4C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

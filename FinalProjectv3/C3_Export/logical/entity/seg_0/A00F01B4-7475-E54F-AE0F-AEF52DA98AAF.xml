@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A00F01B4-7475-E54F-AE0F-AEF52DA98AAF" name="D3_RFE_Contact">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:05:02 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ContRole" id="85919148-857A-5529-C420-5441F94C8341">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:05:16 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ContEmpID" id="5E4A0394-99D8-643F-F946-A9A17BA392F0">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:05:33 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EffDate" id="C0DFE828-A11B-7086-62D6-43ECAA964014">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:05:48 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comments" id="ECF8417B-6376-CDDF-0028-3FBCA4FE01AB">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:06:01 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFEID" id="576D5A3A-F75C-C903-90F7-45B2574FEE43">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:09:29 UTC</createdTime>
+<generatorID>7BDB4CA6-15E4-4970-A939-1B2A33FA4743</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>83A640D7-4127-EEF2-3590-0D6E44206EAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E4C08E25-ED37-BAA3-EFFD-73A3B9A03A13" name="D3_RFE_Contact PK">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:08:47 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="1612BB6F-08B4-44B1-1625-A215166908EB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E4A0394-99D8-643F-F946-A9A17BA392F0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
