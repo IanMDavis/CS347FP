@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD69E487-B917-7725-8A2D-3473970C22E6" name="D3_Comment">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:37:07 UTC</createdTime>
+<ownerDesignName>C7</ownerDesignName>
+<engineerTo>
+<item key="883AEC0D-2E8D-7EE9-6DEA-617C86A162F7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CommentID" id="62D86106-2ADF-E8ED-63FC-335352145884">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:37:14 UTC</createdTime>
+<ownerDesignName>C7</ownerDesignName>
+<engineerTo>
+<item key="883AEC0D-2E8D-7EE9-6DEA-617C86A162F7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFEID" id="D2BF56E6-E587-F649-9B8D-CF6D9E147173">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:37:49 UTC</createdTime>
+<generatorID>D7810ACC-27C8-8A03-2623-435E1A9673A6</generatorID>
+<ownerDesignName>C7</ownerDesignName>
+<engineerTo>
+<item key="883AEC0D-2E8D-7EE9-6DEA-617C86A162F7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>83A640D7-4127-EEF2-3590-0D6E44206EAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EnteredBy" id="B6EC0A51-7835-D7CA-E662-A2D1871BA95B">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:58:29 UTC</createdTime>
+<ownerDesignName>C7</ownerDesignName>
+<engineerTo>
+<item key="883AEC0D-2E8D-7EE9-6DEA-617C86A162F7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CommEntDate" id="8BB27033-A62F-E8D5-C338-C9A48A784E40">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:58:49 UTC</createdTime>
+<ownerDesignName>C7</ownerDesignName>
+<engineerTo>
+<item key="883AEC0D-2E8D-7EE9-6DEA-617C86A162F7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D16691AA-F5E1-50E6-8EC8-4BED7A1E057B" name="D3_Comment PK">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:37:24 UTC</createdTime>
+<ownerDesignName>C7</ownerDesignName>
+<engineerTo>
+<item key="883AEC0D-2E8D-7EE9-6DEA-617C86A162F7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>62D86106-2ADF-E8ED-63FC-335352145884</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

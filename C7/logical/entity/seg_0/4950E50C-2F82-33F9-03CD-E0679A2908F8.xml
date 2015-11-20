@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4950E50C-2F82-33F9-03CD-E0679A2908F8" name="D3_RFE">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:21:57 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RFEID" id="83A640D7-4127-EEF2-3590-0D6E44206EAC">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:22:02 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpID" id="82C5FAFC-C7F4-DEA2-1570-7E44539EF563">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:24:09 UTC</createdTime>
+<generatorID>2F47480C-AAD1-8262-B89B-FF7A0FFFF350</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>207FC835-28F6-2972-1FC7-46566F8566D3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StatusID" id="E15A1C12-AEC1-C81F-A02C-FD34BA4081A5">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:32:13 UTC</createdTime>
+<generatorID>2071D139-3C24-15E8-FB47-B27B1078523A</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F8F2E422-2928-19EA-1658-69299DF5A61D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TaskID" id="78E35063-367D-2781-C61E-08FF21BB8427">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:34:19 UTC</createdTime>
+<generatorID>129D4AD3-06F8-F3D6-86AC-BDD2D4A3EAB6</generatorID>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>16132195-63D8-2AA4-79C3-82A33145A0FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Explanation" id="08D5D1FE-2BC3-147D-0EB3-3326C4142202">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:57:04 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AltProtections" id="80D3D560-E516-F8DE-88A3-469E5111E22D">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:57:19 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AppRevDate" id="88E8B7EA-9AB9-5B64-13A6-035D629E3C5D">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 21:57:38 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EffectDate" id="D2C54B55-A073-2ABE-38E7-52EBBE6663BC">
+<createdBy>brettbookout</createdBy>
+<createdTime>2015-11-17 22:14:20 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="655A17CC-7D61-08D8-C52A-FCD57FC90BD2" name="D3_RFE PK">
+<createdBy>root</createdBy>
+<createdTime>2015-11-02 22:22:20 UTC</createdTime>
+<ownerDesignName>C2_Export</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>83A640D7-4127-EEF2-3590-0D6E44206EAC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21AB0662-FEA5-A188-5A33-EFD89C1EF664" name="D3_Task">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 20:35:52 UTC</createdTime>
+<generatorID>059B0D69-49AA-116E-0C76-31B01661D2E5</generatorID>
+<ownerDesignName>C7</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TaskID" id="5F48EC6A-D981-FB83-52D4-AB68D79BDD32">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 20:35:52 UTC</createdTime>
+<generatorID>16132195-63D8-2AA4-79C3-82A33145A0FD</generatorID>
+<ownerDesignName>C7</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EffectDate" id="C760336C-FB52-4FA1-90DC-471E1F133136">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 20:35:52 UTC</createdTime>
+<generatorID>CE99C6B5-385B-5796-9999-03CE97003F52</generatorID>
+<ownerDesignName>C7</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TaskAbbr" id="A2AB4260-0821-B944-4131-B0CC72D946AB">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 20:35:52 UTC</createdTime>
+<generatorID>E005C61A-004A-7829-D3CD-8B8FEDAC068F</generatorID>
+<ownerDesignName>C7</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TaskDesc" id="CF0CDF8E-8505-DACD-C5B8-BF5DA71D583C">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 20:35:52 UTC</createdTime>
+<generatorID>0D8D5A10-6BA4-7E5C-23F9-5D1706B710E9</generatorID>
+<ownerDesignName>C7</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D7C2549-5D06-90E0-D515-81F85629CDF0" name="D3_Task_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 20:35:52 UTC</createdTime>
+<generatorID>EA3836AF-B634-802D-AD32-C5E75ACC0924</generatorID>
+<ownerDesignName>C7</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F48EC6A-D981-FB83-52D4-AB68D79BDD32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

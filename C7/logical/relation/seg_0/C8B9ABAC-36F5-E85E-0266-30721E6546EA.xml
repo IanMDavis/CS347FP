@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Emp_Con" directorySegmentName="seg_0" id="C8B9ABAC-36F5-E85E-0266-30721E6546EA">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 20:59:04 UTC</createdTime>
+<ownerDesignName>C4</ownerDesignName>
+<engineerTo>
+<item key="3633DD52-F37A-EEE4-6B67-B19C5B6C28A7" value="true"/>
+</engineerTo>
+<sourcePk>1101C10D-18AA-B709-10F7-CCC3DFE7EF9A</sourcePk>
+<targetPk>43D7E8D7-A176-5D74-CD77-604ABA94873C</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E816C6BF-D708-9E93-01C3-727C7AF82B0D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CC69AAA9-C245-2147-BC35-F9239E8A661C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
