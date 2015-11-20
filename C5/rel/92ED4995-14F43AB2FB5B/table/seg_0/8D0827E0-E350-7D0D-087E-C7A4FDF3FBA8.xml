@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D0827E0-E350-7D0D-087E-C7A4FDF3FBA8" name="D3_Emp">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>E816C6BF-D708-9E93-01C3-727C7AF82B0D</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EmpID" id="0DE576BA-5F82-E581-57ED-1CFD5E53DA3D">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>207FC835-28F6-2972-1FC7-46566F8566D3</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_Auth_AuthID" id="9BB86F5F-EA25-13B3-92D3-50A13396D256">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>5D48E72B-E2BB-E2AC-4091-CB85BC807D08</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AC57487-7B8F-5349-5988-F5264C475BB0" referredColumn="02569D19-6380-3BB6-00D0-5E8003B77744"/>
+</associations>
+</Column>
+<Column name="D3_Lab_LabID" id="24313328-5200-C5F6-DBAD-DD3CFD1A1C08">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>C42E48E3-5F30-AC9B-BC71-3671CD752B70</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17C32C45-B5DB-34F8-394E-1B790B2543FF" referredColumn="CAD84A8B-7171-5C10-F52E-ED72B30C114E"/>
+</associations>
+</Column>
+<Column name="EmpName" id="D3A79D99-5717-C656-F20B-CE88D365007F">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>629FB808-CE8F-B176-3D38-56863B825F76</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmpEmail" id="929985B9-B012-C8A3-395F-BEDF7111FA64">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>5BBAA7EA-E09D-83CA-F667-9BE12376A2EF</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmpOffice" id="81CD750A-45A7-7B7B-3A8A-613E6DE1303B">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>4CAD8A59-0DE8-4C22-6F88-6455DC69A79B</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmpPhone" id="46CA2FB4-5002-261C-9446-A925C60BB010">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>DE085CB8-4881-4439-7C85-94ED1D7776AB</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmpStatus" id="80FE0B68-252D-E1CD-E16B-01DCBEC178F4">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>CD39DBFA-A574-E88C-CD19-941C1563358F</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StatEffDate" id="D6BBCF85-85DC-0772-4C39-25798503D0A8">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>4E635730-F6F8-C552-DBAF-FC6ED42EE29F</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Job1" id="FC378371-7B51-9E29-1254-96376F83381A">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>F4F4C67D-21B3-0A74-0D91-6A1B7D73CB7E</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Job2" id="0074DD55-972E-BD6D-9A22-52DD60E870FE">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>01CF27F2-E4BD-25D4-D747-20F0D3495686</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2FA3BF4-E6A8-78C1-15F7-E644767EF052" name="D3_Emp_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>1101C10D-18AA-B709-10F7-CCC3DFE7EF9A</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DE576BA-5F82-E581-57ED-1CFD5E53DA3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24715C64-6D9F-3C57-F9A9-113E93AE7612" name="D3_Emp_D3_Auth_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>DE641792-79BC-1524-1407-F43B6E6783EB</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BB86F5F-EA25-13B3-92D3-50A13396D256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E0E00FE-1423-972D-837A-22CF5658A670" name="D3_Emp_D3_Lab_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 01:35:24 UTC</createdTime>
+<generatorID>616EB305-8D22-7BC4-3DA5-462E924113CA</generatorID>
+<ownerDesignName>C5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24313328-5200-C5F6-DBAD-DD3CFD1A1C08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

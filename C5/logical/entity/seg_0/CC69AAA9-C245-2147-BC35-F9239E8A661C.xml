@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CC69AAA9-C245-2147-BC35-F9239E8A661C" name="D3_Contacts">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 20:56:33 UTC</createdTime>
+<ownerDesignName>C4</ownerDesignName>
+<engineerTo>
+<item key="92ED4995-A4F3-6D87-2ADC-14F43AB2FB5B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ContactID" id="1B596F38-6FCF-056F-6580-9C288A4D99C1">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 20:56:45 UTC</createdTime>
+<ownerDesignName>C4</ownerDesignName>
+<engineerTo>
+<item key="92ED4995-A4F3-6D87-2ADC-14F43AB2FB5B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFEID" id="285D472D-61EC-2DB5-2562-2FCA0F0037CA">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:00:16 UTC</createdTime>
+<generatorID>F42304CF-B265-A336-1922-8156FA6801CF</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<engineerTo>
+<item key="92ED4995-A4F3-6D87-2ADC-14F43AB2FB5B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>83A640D7-4127-EEF2-3590-0D6E44206EAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmpID" id="7B7762AF-20A0-DA00-98F5-F23F2C5E804A">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 21:00:21 UTC</createdTime>
+<generatorID>C8B9ABAC-36F5-E85E-0266-30721E6546EA</generatorID>
+<ownerDesignName>C4</ownerDesignName>
+<engineerTo>
+<item key="92ED4995-A4F3-6D87-2ADC-14F43AB2FB5B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>207FC835-28F6-2972-1FC7-46566F8566D3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43D7E8D7-A176-5D74-CD77-604ABA94873C" name="D3_Contacts PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-18 20:57:02 UTC</createdTime>
+<ownerDesignName>C4</ownerDesignName>
+<engineerTo>
+<item key="92ED4995-A4F3-6D87-2ADC-14F43AB2FB5B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1B596F38-6FCF-056F-6580-9C288A4D99C1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

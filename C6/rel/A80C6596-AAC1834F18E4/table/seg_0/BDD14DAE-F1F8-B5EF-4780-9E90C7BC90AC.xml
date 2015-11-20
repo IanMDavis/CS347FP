@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDD14DAE-F1F8-B5EF-4780-9E90C7BC90AC" name="D3_Contacts">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 02:12:40 UTC</createdTime>
+<generatorID>CC69AAA9-C245-2147-BC35-F9239E8A661C</generatorID>
+<ownerDesignName>C6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ContactID" id="38C194F6-E121-16A6-3C22-1F5B3F92E5E6">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 02:12:40 UTC</createdTime>
+<generatorID>1B596F38-6FCF-056F-6580-9C288A4D99C1</generatorID>
+<ownerDesignName>C6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="FBE9FDF0-5BC0-6EB7-A9D8-F6B822805CFA">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 02:12:40 UTC</createdTime>
+<generatorID>285D472D-61EC-2DB5-2562-2FCA0F0037CA</generatorID>
+<ownerDesignName>C6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB8E7116-86D0-FA46-8AFA-10BFD5C91C2E" referredColumn="CF9804A4-9BFB-C443-6130-64C3146B5A8F"/>
+</associations>
+</Column>
+<Column name="D3_Emp_EmpID" id="7215668E-8846-7B26-294B-5407CB6A00DC">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 02:12:40 UTC</createdTime>
+<generatorID>7B7762AF-20A0-DA00-98F5-F23F2C5E804A</generatorID>
+<ownerDesignName>C6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F471010D-FDB4-709F-DEC1-CA84596C11F0" referredColumn="B7A53512-8D66-AF53-044F-893C7A75ACA3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EC06287-6D8A-23EC-BF3C-D9D99B1D6AC2" name="D3_Contacts_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 02:12:40 UTC</createdTime>
+<generatorID>43D7E8D7-A176-5D74-CD77-604ABA94873C</generatorID>
+<ownerDesignName>C6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38C194F6-E121-16A6-3C22-1F5B3F92E5E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC6C0908-1E6B-6CB6-67A0-9DD28205E22C" name="D3_Contacts_D3_RFE_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 02:12:40 UTC</createdTime>
+<generatorID>F42304CF-B265-A336-1922-8156FA6801CF</generatorID>
+<ownerDesignName>C6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBE9FDF0-5BC0-6EB7-A9D8-F6B822805CFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABBDCB3C-C5F9-DABC-B8F0-91822DDA6ED5" name="D3_Contacts_D3_Emp_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 02:12:40 UTC</createdTime>
+<generatorID>C8B9ABAC-36F5-E85E-0266-30721E6546EA</generatorID>
+<ownerDesignName>C6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7215668E-8846-7B26-294B-5407CB6A00DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
