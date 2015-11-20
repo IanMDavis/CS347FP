@@ -45,7 +45,15 @@ ALTER TABLE D3_Contacts ADD CONSTRAINT D3_Contacts_PK PRIMARY KEY ( ContactID ) 
 DROP TABLE D3_Doc;
 
 CREATE TABLE D3_Doc
-  ( DocID INTEGER NOT NULL , D3_RFE_RFEID INTEGER
+  (
+    DocID        INTEGER NOT NULL ,
+    D3_RFE_RFEID INTEGER ,
+    Filename     VARCHAR2 (4000) ,
+    FileMimetype VARCHAR2 (512) ,
+    FileCharset  VARCHAR2 (512) ,
+    FileBlob BLOB ,
+    FileComm VARCHAR2 (4000) ,
+    Tags     VARCHAR2 (4000)
   ) ;
 ALTER TABLE D3_Doc ADD CONSTRAINT D3_Doc_PK PRIMARY KEY ( DocID ) ;
 

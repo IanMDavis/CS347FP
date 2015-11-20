@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0A281DE-AA52-85E0-2913-175DDDFBD357" name="D3_Doc">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>4B63D23B-3CA9-8BB5-48CE-5CD7F3DB9FEC</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DocID" id="DB1AF3FD-0A50-2816-CFCA-CB97966628FB">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>4569654E-1FC2-71B7-A382-2F3190F1B760</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="D77644EC-6A7A-D536-72B3-CA9889BB86C8">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>B5E12518-B9D5-694D-49DF-AD4193A67DAF</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="388AB835-2D3E-955E-3028-B381A1D01DAF" referredColumn="F3F86664-41FF-CA30-FBEF-C9E7E2275D78"/>
+</associations>
+</Column>
+<Column name="Filename" id="88039260-7B4D-EFBA-6C8C-EC0D09B7F30D">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>484B006C-95FC-6EC2-BB6E-249DE5AA71EF</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FileMimetype" id="84B6F18A-2BC4-E8F5-6174-9FD66F6465BB">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>5E133EE4-6E39-6B67-CB5D-4B27F5D8DEDD</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FileCharset" id="B9556F5D-1982-CF42-3849-D5B44B2E337B">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>03C44748-3838-E042-08CE-94B025D012FE</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FileBlob" id="41D6FD03-1A80-5BFE-9CC5-C7DDCB4C81CB">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>018936F3-83D6-0017-62A0-D6B1D3AE296D</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FileComm" id="3C2E24D3-057F-AEB3-1253-3597424241AB">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>5F48B776-C248-7C3D-1945-46CD6FC6E7C7</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tags" id="7B985D5A-DFC9-E003-CD39-21F595EC5C52">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>62967A60-42B9-4B09-D9B9-EF8F7BD24E5D</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ECBB206E-3E7B-4822-4E83-5C9A25E60AC3" name="D3_Doc_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>9EE84D3E-870F-E872-D927-B3DFA13F13A0</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB1AF3FD-0A50-2816-CFCA-CB97966628FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA64E6B0-A6B4-98F2-5C09-7F43E07DC2C0" name="D3_Doc_D3_RFE_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>E39670C2-CFE4-2AFF-6CBD-8996B1D50DA2</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D77644EC-6A7A-D536-72B3-CA9889BB86C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

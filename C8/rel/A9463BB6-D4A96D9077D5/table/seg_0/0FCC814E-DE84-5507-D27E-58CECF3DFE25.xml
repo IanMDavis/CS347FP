@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FCC814E-DE84-5507-D27E-58CECF3DFE25" name="D3_Approver">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>EE30D4F6-E833-1985-BF55-C5ADBD08A77D</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ApproverID" id="A36CC6AD-7492-386C-AB09-873C4F913DCB">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>19B4835C-0F7B-9128-A96E-6603995E9F22</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="B862C35B-45BF-A9DC-D779-091E4CC16480">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>9A55CCA7-D11F-9629-9D91-3F5E17FE64FF</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04022DAF-EA8E-2716-65D5-5D85666AAD67" referredColumn="F3F86664-41FF-CA30-FBEF-C9E7E2275D78"/>
+</associations>
+</Column>
+<Column name="D3_Emp_EmpID" id="DA043461-C80B-8D92-55EE-21AE6AA03473">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>74CE8DC3-8DE1-DD8D-46E7-2E824D0FC436</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FBE7892-D11D-DC44-C372-10C0E6CB3FD5" referredColumn="213F29AD-C901-3021-5E6C-42C6E1A2E513"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D0FE365-91A4-CBAE-07B1-5B935DC04B65" name="D3_Approver_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>612531DA-FBB0-FA47-B906-9440EE1580C8</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A36CC6AD-7492-386C-AB09-873C4F913DCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77786041-BB3D-F161-A875-3BBE7585D29D" name="D3_Approver_D3_RFE_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>BA3F53BC-00AA-24F9-A2D1-CAFC68AB4074</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B862C35B-45BF-A9DC-D779-091E4CC16480"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16D421CE-BE72-FE73-F63B-BC26AABC0EBE" name="D3_Approver_D3_Emp_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>2E1DD262-2166-9832-8C72-3B105753B63E</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA043461-C80B-8D92-55EE-21AE6AA03473"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

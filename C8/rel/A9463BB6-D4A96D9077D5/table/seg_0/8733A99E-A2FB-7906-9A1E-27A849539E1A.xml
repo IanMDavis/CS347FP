@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8733A99E-A2FB-7906-9A1E-27A849539E1A" name="D3_RFE_Contact">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>A00F01B4-7475-E54F-AE0F-AEF52DA98AAF</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ContRole" id="E3761C72-9C94-1988-CF13-001E5B85F449">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>85919148-857A-5529-C420-5441F94C8341</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ContEmpID" id="C4942D58-D30A-9BCE-5D74-840A2B92FE56">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>5E4A0394-99D8-643F-F946-A9A17BA392F0</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EffDate" id="7331D8F4-A70E-4892-EA88-DD8911F4CC1D">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>C0DFE828-A11B-7086-62D6-43ECAA964014</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comments" id="71E92EDD-E9F9-8132-6734-EBFEF6DC2CD7">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>ECF8417B-6376-CDDF-0028-3FBCA4FE01AB</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="5939176E-FF04-E376-38BD-DF20ABE7208C">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>576D5A3A-F75C-C903-90F7-45B2574FEE43</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="366837AC-BA9D-DE0C-4AD7-5A481DE0B764" referredColumn="F3F86664-41FF-CA30-FBEF-C9E7E2275D78"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7DA56CCD-3D12-E033-573A-FB8FEE8AC1FE" name="D3_RFE_Contact_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>E4C08E25-ED37-BAA3-EFFD-73A3B9A03A13</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4942D58-D30A-9BCE-5D74-840A2B92FE56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25C84892-1CDE-A32A-B190-427714A21616" name="D3_RFE_Contact_D3_RFE_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>7BDB4CA6-15E4-4970-A939-1B2A33FA4743</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5939176E-FF04-E376-38BD-DF20ABE7208C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

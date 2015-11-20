@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="457747D4-A980-EF74-5EA0-5094DA183A8A" name="D3_Comment">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>BD69E487-B917-7725-8A2D-3473970C22E6</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CommentID" id="F64FB8FB-9E95-5F26-90D9-45018A8B8F74">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>62D86106-2ADF-E8ED-63FC-335352145884</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="D3_RFE_RFEID" id="0EC4191D-2107-85E4-C8AA-803064C7D39E">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>D2BF56E6-E587-F649-9B8D-CF6D9E147173</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E89570E-A723-72C9-B6F2-2155D79D9022" referredColumn="F3F86664-41FF-CA30-FBEF-C9E7E2275D78"/>
+</associations>
+</Column>
+<Column name="EnteredBy" id="9012C2E0-49D2-C894-EA2D-08506A4CE57F">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>B6EC0A51-7835-D7CA-E662-A2D1871BA95B</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CommEntDate" id="5B37ADCD-8366-2FB2-B1B9-49377D73596A">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>8BB27033-A62F-E8D5-C338-C9A48A784E40</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7805558F-0FA6-970B-4779-D77747D2B6AF" name="D3_Comment_PK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>D16691AA-F5E1-50E6-8EC8-4BED7A1E057B</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F64FB8FB-9E95-5F26-90D9-45018A8B8F74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99901BED-F510-2510-2285-2F84FF7531A3" name="D3_Comment_D3_RFE_FK">
+<createdBy>ian</createdBy>
+<createdTime>2015-11-20 22:18:11 UTC</createdTime>
+<generatorID>D7810ACC-27C8-8A03-2623-435E1A9673A6</generatorID>
+<ownerDesignName>C8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EC4191D-2107-85E4-C8AA-803064C7D39E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

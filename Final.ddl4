@@ -6,7 +6,7 @@ drop view D3_LabSysAdm_view ;
 
 create view D3_ExecDir_view as 
 SELECT * FROM D3_Emp
-	WHERE Job1 = 'ExecDir';
+	WHERE EmpType = 'ExecDir';
 
 create or replace TRIGGER D3_ExecDir_trigger
      INSTEAD OF insert ON D3_ExecDir_view
@@ -20,8 +20,7 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		Job1,
-		Job2)
+		EmpType)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -30,15 +29,14 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'ExecDir',
-		NULL) ;
+		'ExecDir') ;
 END;
 /
 --END OF ExecDir VIEW
 
 create view D3_ChrPsn_view as 
 SELECT * FROM D3_Emp
-	WHERE Job1 = 'ChrPsn';
+	WHERE EmpType = 'ChrPsn';
 create or replace TRIGGER D3_ChrPsn_trigger
      INSTEAD OF insert ON D3_ChrPsn_view
      FOR EACH ROW 
@@ -51,8 +49,7 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		Job1,
-		Job2)
+		EmpType)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -61,15 +58,14 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'ChrPsn',
-		NULL) ;
+		'ChrPsn') ;
 END;
 /
 --END OF ChrPsn VIEW
 
 create view D3_LabEmp_view as 
 SELECT * FROM D3_Emp
-	WHERE Job1 = 'LabEmp';
+	WHERE EmpType = 'LabEmp';
 
 create or replace TRIGGER D3_LabEmp_trigger
      INSTEAD OF insert ON D3_LabEmp_view
@@ -83,8 +79,7 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		Job1,
-		Job2)
+		EmpType)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -93,15 +88,14 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'LabEmp',
-		NULL) ;
+		'LabEmp') ;
 END;
 /
 --END OF LabEmp VIEW
 
 create view D3_LabDir_view as 
 SELECT * FROM D3_Emp
-	WHERE Job1 = 'LabDir';
+	WHERE EmpType = 'LabDir';
 
 create or replace TRIGGER D3_LabDir_trigger
      INSTEAD OF insert ON D3_LabDir_view
@@ -115,8 +109,7 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		Job1,
-		Job2)
+		EmpType)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -125,15 +118,14 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'LabDir',
-		NULL) ;
+		'LabDir') ;
 END;
 /
 --END OF LabDir VIEW
 
 create view D3_LabSysAdm_view as 
 SELECT * FROM D3_Emp
-	WHERE Job1 = 'LabSysAdm';
+	WHERE EmpType = 'LabSysAdm';
 
 create or replace TRIGGER D3_LabSysAdm_trigger
      INSTEAD OF insert ON D3_LabSysAdm_view
@@ -147,8 +139,7 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		Job1,
-		Job2)
+		EmpType)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -157,8 +148,7 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'LabSysAdm',
-		NULL) ;
+		'LabSysAdm') ;
 END;
 /
 --END OF LabSysAdm VIEW
