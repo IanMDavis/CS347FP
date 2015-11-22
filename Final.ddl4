@@ -14,6 +14,8 @@ create or replace TRIGGER D3_ExecDir_trigger
 BEGIN
     insert into D3_Emp( 
 		EmpID,
+		D3_AUTH_AUTHID,
+		D3_LAB_LABID,
 		EmpName,
 		EmpEmail,
 		EmpOffice,
@@ -24,6 +26,8 @@ BEGIN
 		Role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
+		:NEW.D3_AUTH_AUTHID,
+		:NEW.D3_LAB_LABID,
 		:NEW.EmpName,
 		:NEW.EmpEmail,
 		:NEW.EmpOffice,
@@ -45,6 +49,8 @@ create or replace TRIGGER D3_ChrPsn_trigger
 BEGIN
     insert into D3_Emp( 
 		EmpID,
+		D3_AUTH_AUTHID,
+		D3_LAB_LABID,
 		EmpName,
 		EmpEmail,
 		EmpOffice,
@@ -55,6 +61,8 @@ BEGIN
 		Role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
+		:NEW.D3_AUTH_AUTHID,
+		:NEW.D3_LAB_LABID,
 		:NEW.EmpName,
 		:NEW.EmpEmail,
 		:NEW.EmpOffice,
@@ -77,6 +85,8 @@ create or replace TRIGGER D3_LabEmp_trigger
 BEGIN
     insert into D3_Emp( 
 		EmpID,
+		D3_AUTH_AUTHID,
+		D3_LAB_LABID,
 		EmpName,
 		EmpEmail,
 		EmpOffice,
@@ -87,6 +97,8 @@ BEGIN
 		role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
+		:NEW.D3_AUTH_AUTHID,
+		:NEW.D3_LAB_LABID,
 		:NEW.EmpName,
 		:NEW.EmpEmail,
 		:NEW.EmpOffice,
@@ -109,6 +121,8 @@ create or replace TRIGGER D3_LabDir_trigger
 BEGIN
     insert into D3_Emp( 
 		EmpID,
+		D3_AUTH_AUTHID,
+		D3_LAB_LABID,
 		EmpName,
 		EmpEmail,
 		EmpOffice,
@@ -119,6 +133,8 @@ BEGIN
 		role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
+		:NEW.D3_AUTH_AUTHID,
+		:NEW.D3_LAB_LABID,
 		:NEW.EmpName,
 		:NEW.EmpEmail,
 		:NEW.EmpOffice,
@@ -141,6 +157,8 @@ create or replace TRIGGER D3_LabSysAdm_trigger
 BEGIN
     insert into D3_Emp( 
 		EmpID,
+		D3_AUTH_AUTHID,
+		D3_LAB_LABID,
 		EmpName,
 		EmpEmail,
 		EmpOffice,
@@ -151,6 +169,8 @@ BEGIN
 		role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
+		:NEW.D3_AUTH_AUTHID,
+		:NEW.D3_LAB_LABID,
 		:NEW.EmpName,
 		:NEW.EmpEmail,
 		:NEW.EmpOffice,
