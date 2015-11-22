@@ -1,7 +1,7 @@
 # Change the followin oracle account id and password to your oracle account id and password. Also, change A0 to your group's number but don't use F15 because it will make some internal names be too long.
 conn = connectTo 'jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl' 'C##cs347_imw252' 'orcl_imw252' 'rdf_mode' 'D3';
 
-Neo4j on conn "CREATE (:MAKE {MAKENO : 0, MAKENAME : 'FORD', FOUNDED : 1903, EXECUTIVE : 'Mark Fields', CITY : 'Dearborn', STATE : 'Michigan', WEBSITE : 'http://www.ford.com/'})"
+Neo4j on conn "CREATE (:MAKE {MAKENO : 0, MAKENAME : 'Ford', FOUNDED : 1903, EXECUTIVE : 'Mark Fields', CITY : 'Dearborn', STATE : 'Michigan', WEBSITE : 'http://www.ford.com/'})"
 Neo4j on conn "CREATE (:MAKE {MAKENO : 1, MAKENAME : 'Chevrolet', FOUNDED : 1911, EXECUTIVE : 'Mary Barra', CITY : 'Detroit', STATE : 'Michigan', WEBSITE : 'http://www.chevrolet.com/'})"
 Neo4j on conn "CREATE (:MAKE {MAKENO : 2, MAKENAME : 'Toyota', FOUNDED : 1957, EXECUTIVE : 'Jim Lentz', CITY : 'Torrance', STATE : 'California', WEBSITE : 'http://www.toyota.com/'})"
 Neo4j on conn "CREATE (:MAKE {MAKENO : 3, MAKENAME : 'Jeep', FOUNDED : 1941, EXECUTIVE : 'Michael Manley', CITY : 'Auburn Hills', STATE : 'Michigan', WEBSITE : 'http://www.jeep.com/en'})"
