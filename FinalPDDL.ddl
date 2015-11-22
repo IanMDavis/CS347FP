@@ -70,7 +70,8 @@ CREATE TABLE D3_Emp
     EmpPhone       INTEGER NOT NULL ,
     EmpStatus      VARCHAR2 (1) NOT NULL ,
     StatEffDate    DATE NOT NULL ,
-    EmpType        VARCHAR2 (255) NOT NULL
+    EmpType        VARCHAR2 (255) ,
+    Role_Rank      INTEGER
   ) ;
 ALTER TABLE D3_Emp ADD CONSTRAINT D3_Emp_PK PRIMARY KEY ( EmpID ) ;
 
