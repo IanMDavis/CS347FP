@@ -20,7 +20,8 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		EmpType)
+		EmpType,
+		Role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -29,7 +30,8 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'ExecDir') ;
+		'ExecDir',
+		6) ;
 END;
 /
 --END OF ExecDir VIEW
@@ -49,7 +51,8 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		EmpType)
+		EmpType,
+		Role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -58,7 +61,8 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'ChrPsn') ;
+		'ChrPsn',
+		5) ;
 END;
 /
 --END OF ChrPsn VIEW
@@ -79,7 +83,8 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		EmpType)
+		EmpType,
+		role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -88,7 +93,8 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'LabEmp') ;
+		'LabEmp',
+		2) ;
 END;
 /
 --END OF LabEmp VIEW
@@ -109,7 +115,8 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		EmpType)
+		EmpType,
+		role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -118,7 +125,8 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'LabDir') ;
+		'LabDir',
+		4) ;
 END;
 /
 --END OF LabDir VIEW
@@ -139,7 +147,8 @@ BEGIN
 		EmpPhone,
 		EmpStatus,
 		StatEffDate,
-		EmpType)
+		EmpType,
+		role_rank)
 		 VALUES ( 
 		:NEW.EmpID,
 		:NEW.EmpName,
@@ -148,7 +157,8 @@ BEGIN
 		:NEW.EmpPhone,
 		:NEW.EmpStatus,
 		:NEW.StatEffDate,
-		'LabSysAdm') ;
+		'LabSysAdm',
+		3) ;
 END;
 /
 --END OF LabSysAdm VIEW
