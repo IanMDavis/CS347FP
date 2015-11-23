@@ -1,3 +1,33 @@
+--TRUNCATE ALL DATA TABLES
+truncate table D3_APPROVER;
+truncate table D3_AUTH;
+truncate table D3_COMMENT;
+truncate table D3_CONTACTS;
+truncate table D3_DOC;
+truncate table D3_EMP;
+truncate table D3_LAB;
+truncate table D3_RFE;
+truncate table D3_RFE_CONTACT;
+truncate table D3_ROLES;
+truncate table D3_SHIST;
+truncate table D3_STATUS;
+truncate table D3_TASK;
+
+--DISABLE TRIGGERS FOR SAMPLE DATA INSERTION
+alter trigger D3_APPROVER_PK_TRIG DISABLE;
+alter trigger D3_AUTH_PK_TRIG DISABLE;
+alter trigger D3_COMMENT_PK_TRIG DISABLE;
+alter trigger D3_CONTACTS_PK_TRIG DISABLE;
+alter trigger D3_DOC_PK_TRIG DISABLE;
+alter trigger D3_EMP_PK_TRIG DISABLE;
+alter trigger D3_LAB_PK_TRIG DISABLE;
+alter trigger D3_RFE_PK_TRIG DISABLE;
+alter trigger D3_RFE_CONTACT_PK_TRIG DISABLE;
+alter trigger D3_ROLES_PK_TRIG DISABLE;
+alter trigger D3_SHIST_PK_TRIG DISABLE;
+alter trigger D3_STATUS_PK_TRIG DISABLE;
+alter trigger D3_TASK_PK_TRIG DISABLE;
+
 --GENERATE SAMPLE LABS
 INSERT INTO D3_LAB (LABID, NAME) VALUES (100, 'First Lab');
 INSERT INTO D3_LAB (LABID, NAME) VALUES (101, 'Second Lab');
@@ -39,3 +69,18 @@ INSERT INTO D3_LABEMP_VIEW VALUES (100, 102, 102, 'Wendy Read-Write', 'Wendy@try
 INSERT INTO D3_LABSYSADM_VIEW VALUES (100, 102, 102, 'Gompers Read-Write', 'Gompers@try.com', 1, 1111, 'A', '01/01/2001', 'LabSysAdm', NULL, NULL, NULL, NULL, NULL, 3);
 INSERT INTO D3_LABSYSADM_VIEW VALUES (100, 102, 102, 'Pacifica Read-Write', 'Pacifica@try.com', 1, 1111, 'A', '01/01/2001', 'LabSysAdm', NULL, NULL, NULL, NULL, NULL, 3);
 INSERT INTO D3_LABDIR_VIEW VALUES (100, 102, 102, 'Buddy Read-Write', 'Buddy@try.com', 1, 1111, 'A', '01/01/2001', 'LabDir', NULL, NULL, NULL, NULL, NULL, 4);
+
+--ENABLE TRIGGERS FOR SAMPLE DATA INSERTION
+alter trigger D3_APPROVER_PK_TRIG ENABLE;
+alter trigger D3_AUTH_PK_TRIG ENABLE;
+alter trigger D3_COMMENT_PK_TRIG ENABLE;
+alter trigger D3_CONTACTS_PK_TRIG ENABLE;
+alter trigger D3_DOC_PK_TRIG ENABLE;
+alter trigger D3_EMP_PK_TRIG ENABLE;
+alter trigger D3_LAB_PK_TRIG ENABLE;
+alter trigger D3_RFE_PK_TRIG ENABLE;
+alter trigger D3_RFE_CONTACT_PK_TRIG ENABLE;
+alter trigger D3_ROLES_PK_TRIG ENABLE;
+alter trigger D3_SHIST_PK_TRIG ENABLE;
+alter trigger D3_STATUS_PK_TRIG ENABLE;
+alter trigger D3_TASK_PK_TRIG ENABLE;
